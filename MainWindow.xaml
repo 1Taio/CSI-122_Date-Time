@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSI_122_Date_Time"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="563" Width="800">
+    <Grid Background="#FF8D211A">
+        <RichTextBox HorizontalAlignment="Left" Height="272" Margin="267,79,0,0" VerticalAlignment="Top" Width="257">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="runDisplay" Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label Content="Day" HorizontalAlignment="Left" Height="58" Margin="59,54,0,0" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="txtDay" HorizontalAlignment="Left" Height="22" Margin="59,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <Label Content="Month" HorizontalAlignment="Left" Height="58" Margin="59,129,0,0" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="txtMonth" HorizontalAlignment="Left" Height="22" Margin="59,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <Label Content="Year" HorizontalAlignment="Left" Height="58" Margin="59,201,0,0" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="txtYear" HorizontalAlignment="Left" Height="22" Margin="59,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <Button x:Name="btnDisplayTime" Content="Display Time" HorizontalAlignment="Left" Height="30" Margin="170,109,0,0" VerticalAlignment="Top" Width="81" Click="btnDisplayTime_Click"/>
+        <Button x:Name="btnDriverLis" Content="Driver Liscense" HorizontalAlignment="Left" Height="25" Margin="156,158,0,0" VerticalAlignment="Top" Width="106" Click="btnDriverLis_Click"/>
+        <DatePicker x:Name="dpDate" HorizontalAlignment="Left" Margin="59,277,0,0" VerticalAlignment="Top"/>
+        <Calendar x:Name="clDate" HorizontalAlignment="Left" Height="154" Margin="12,330,0,0" VerticalAlignment="Top" Width="180"/>
+        <Button x:Name="btnResults" Content="Results" HorizontalAlignment="Left" Height="31" Margin="164,239,0,0" VerticalAlignment="Top" Width="90" Click="btnResults_Click"/>
 
     </Grid>
 </Window>
